@@ -1,4 +1,9 @@
+from typing import Optional
+
 import mongoengine as me
+from bson import ObjectId
+
+import texts
 
 
 class Text(me.Document):
@@ -15,6 +20,16 @@ class WelcomeText(Text):
 
 
 class Tariff(me.Document):
-    name = me.StringField(primary_key=True)
-    description = me.StringField()
-    price = me.IntField()
+    title: str = me.StringField()
+    description: str = me.StringField()
+    price: int = me.IntField()
+    duration: Optional[int] = me.IntField()
+    channel_id: int = me.IntField()
+
+
+tariff1 = Tariff(
+    id=ObjectId('61d9de96fc51338d9868d842'),
+    title='🎉 Доступ навсегда',
+    description=texts.tariff1_description,
+    price=379,
+).save()

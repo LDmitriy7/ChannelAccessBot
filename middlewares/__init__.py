@@ -1,2 +1,7 @@
+from aiogram_utils import middlewares
+
+from loader import dp
+
+
 def setup():
-    pass
+    dp.setup_middleware(middlewares.AnswerAnyQuery())

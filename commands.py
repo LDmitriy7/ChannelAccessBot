@@ -20,7 +20,6 @@ USER_COMMANDS = [
 ADMIN_COMMANDS = USER_COMMANDS + [
     types.BotCommand(BROADCAST, 'Рассылка'),
     types.BotCommand(SET_COMMANDS, 'Обновить команды'),
-    types.BotCommand(SET_COMMANDS, 'Обновить команды'),
     types.BotCommand(SET_WELCOME_TEXT, 'Обновить текст (start)'),
 ]
 
