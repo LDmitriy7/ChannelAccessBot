@@ -10,17 +10,12 @@ START = 'start'
 CANCEL = 'cancel'
 BROADCAST = 'broadcast'
 SET_COMMANDS = 'set_commands'
-SET_WELCOME_TEXT = 'set_welcome_text'
 
 USER_COMMANDS = [
-    # types.BotCommand(START, 'Запустить бота'),
-    # types.BotCommand(CANCEL, 'Отменить'),
+    types.BotCommand(START, 'Показать тарифы'),
 ]
 
 ADMIN_COMMANDS = USER_COMMANDS + [
-    types.BotCommand(BROADCAST, 'Рассылка'),
-    types.BotCommand(SET_COMMANDS, 'Обновить команды'),
-    types.BotCommand(SET_WELCOME_TEXT, 'Обновить текст (start)'),
 ]
 
 

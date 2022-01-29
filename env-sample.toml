@@ -1,7 +1,5 @@
-# Sample for 'env.toml'
-
 [Database]
-name = 'bot'
+name = 'ChannelAccessBot'
 #username = 'root'
 #password = ''
 #host = 'localhost'
@@ -18,3 +16,6 @@ admins_ids = [724477101]
 [Log]
 #file = '.log'
 #level = 30
+
+[Wallet]
+pubkey = ''

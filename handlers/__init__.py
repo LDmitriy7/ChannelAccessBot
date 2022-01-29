@@ -8,3 +8,5 @@ def setup():
     for_admins.setup()
 
     from . import tariffs
+
+    from . import unknown

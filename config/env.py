@@ -32,3 +32,9 @@ class Log:
 
     file = _data.get('file')
     level = _data.get('level')
+
+
+class Wallet:
+    _data = _env['Wallet']
+
+    pubkey = _data['pubkey']

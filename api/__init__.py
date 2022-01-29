@@ -1,1 +1,2 @@
-from .get_text import *
+from .tariff import *
+from .qiwi import Wallet
